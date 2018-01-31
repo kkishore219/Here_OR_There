@@ -3,11 +3,13 @@
 
 <head>
     <title>Here or There</title>
-    <<!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-        <link rel="stylesheet" type="text/css" href="assets/style.css">
-
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 
@@ -26,20 +28,34 @@
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
                     <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+
                 </ol>
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
+                    <div class="item">
+                        <img src="images_here_or_there/American_Tobacco_skyline.jpg" alt="Durham" style="width:100%;">
+                    </div>
+
                     <div class="item active">
                         <img src="images_here_or_there/south-africa.jpg" alt="South Africa" style="width:100%;">
                     </div>
+
 
                     <div class="item">
                         <img src="images_here_or_there/france-ms1.jpg" alt="France" style="width:100%;">
                     </div>
 
                     <div class="item">
-                        <img src="images_here_or_there/persia.jpeg" alt="Persia" style="width:100%;">
+
+                        <img src="images_here_or_there/snow-image.png" alt="Winter" style="width:100%;">
+                    </div>
+
+                    <div class="item">
+                        <img src="images_here_or_there/Caribbean-Bahamas-sea-turtle-swim.jpg" alt="Turtle" style="width:100%;">
+
                     </div>
                 </div>
 
@@ -67,8 +83,10 @@
             <div class="col-lg-6" id="city1">
                 <div class="input-group">
                     <span class="input-group-btn">
-          								<button id="btn1" class="btn btn-default" type="button">Go!</button>
-          							</span>
+                      
+                                        <button id="btn1" class="btn btn-default" type="button">Go!</button>
+                                    </span>
+
                     <input type="text" id="textInput1" class="form-control" placeholder="Enter in City's name...">
                 </div>
             </div>
@@ -77,8 +95,10 @@
                 <div class="input-group">
                     <input type="text" id="textInput2" class="form-control" placeholder="Enter in City's name...">
                     <span class="input-group-btn">
-          								<button id="btn2" class="btn btn-default" type="button">Go!</button>
-          							</span>
+
+                                        <button id="btn2" class="btn btn-default" type="button">Go!</button>
+                                    </span>
+
                 </div>
             </div>
         </div>
@@ -138,6 +158,7 @@
             </div>
         </div>
 
+
         <div class="col-lg-6">
             <div class="list-group">
                 <a href="#" class="list-group-item active" id="cityCSS1">
@@ -147,6 +168,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- giph div-->
     <div class="row" id="giph">
@@ -183,8 +205,10 @@
         <!--Copyright-->
         <div>
             <div class="container-fluid">
-                <h6>Copyright © 2018. UNC Bootcamp. Project 1 of 'Tech Gurus'</h6>
-                <h6>Powered by News API</h6>
+
+                © 2017 Copyright: UNC Bootcamp : Project 1 of Tech Gurus
+                <p>Powered by News API</p>
+
             </div>
         </div>
 
@@ -195,10 +219,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>
-    <script src="scripts/javascript/jsWeather.js"></script>
-    <script src="scripts/javascript/NewsAPI.js"></script>
-    <script src="scripts/here-or-there.js"></script>
-    <script src="scripts/ajax.js"></script>
+
+    <script src="assets/javascript/jsWeather.js"></script>
+    <script src="assets/javascript/NewsAPI.js"></script>
+    <script src="here-or-there.js"></script>
 
 
 </body>
