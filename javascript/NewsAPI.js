@@ -9,7 +9,7 @@ var numArticles = 10;
 $("#textInput1").keyup(function(event) {
   if (event.keyCode === 13) {
       $("#btn1").click();
-      $("#textInput2").val ("");
+      $("#textInput1").val ("");
   }
 });
 
