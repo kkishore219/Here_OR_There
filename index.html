@@ -6,6 +6,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="reset.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -18,7 +19,7 @@
         <!-- Jumbotron header -->
         <div id="jumbotron">
             <h1 id="jumboH1">Welcome to Here or There!</h1>
-            <p id="jumboP">Compaire the weather and the local news from two cities.</p>
+            <p id="jumboP">Compare the weather and the news from two cities.</p>
 
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
@@ -74,7 +75,8 @@
     <!-- search feilds -->
     <div class="row" id="search">
         <div class="row">
-            <div class="col-lg-6" id="city1">
+            <!-- we took out city1 as an id and it got the search feilds to work no problem -->
+            <div class="col-lg-6" id="search1">
                 <div class="input-group">
                     <span class="input-group-btn">
                                         <button id="btn1" class="btn btn-default" type="button">Go!</button>
@@ -82,8 +84,8 @@
                     <input type="text" id="textInput1" class="form-control" placeholder="Enter in City's name...">
                 </div>
             </div>
-
-            <div class="col-lg-6" id="city2">
+            <!-- we took out city2 as an id and it got the search feilds to work no problem -->
+            <div class="col-lg-6" id="search2">
                 <div class="input-group">
                     <input type="text" id="textInput2" class="form-control" placeholder="Enter in City's name...">
                     <span class="input-group-btn">
@@ -103,7 +105,7 @@
                 <a href="#" class="list-group-item active" id="weatherCSS1">
                     <h4 class="list-group-item-heading" id="weather1">Weather</h4>
                     <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2 text-center left-panel">
+                        <div id='leftPanelWeather' class="col-lg-8 col-lg-offset-2 text-center left-panel hidden">
                             <h2>City: <span id="city1"></span></h2>
                             <h2>Main Weather: <span id="main_weather1"></span></h2>
                             <h2>Description: <span id="description_weather1"></span></h2>
@@ -122,8 +124,8 @@
                 <a href="#" class="list-group-item active" id="weatherCSS2">
                     <h4 class="list-group-item-heading" id="weather2">Weather</h4>
                     <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2 text-center right-panel">
-                            <h2>City: <span id="city1"></span></h2>
+                        <div id='rightPanelWeather' class="col-lg-8 col-lg-offset-2 text-center right-panel hidden">
+                            <h2>City: <span id="city2"></span></h2>
                             <h2>Main Weather: <span id="main_weather2"></span></h2>
                             <h2>Description: <span id="description_weather2"></span></h2>
                             <img id="weather_image2" src="">
@@ -142,7 +144,7 @@
         <div class="col-lg-6">
             <div class="list-group">
                 <a href="#" class="list-group-item active" id="cityCSS1">
-                    <h4 class="list-group-item-heading" id="city1">Local News</h4>
+                    <h4 class="list-group-item-heading" id="city1">News</h4>
                     <p id="info1">This is where the news information will go.</p>
                 </a>
             </div>
@@ -151,7 +153,7 @@
         <div class="col-lg-6">
             <div class="list-group">
                 <a href="#" class="list-group-item active" id="cityCSS1">
-                    <h4 class="list-group-item-heading" id="city2">Local News</h4>
+                    <h4 class="list-group-item-heading" id="city2">News</h4>
                     <p id="info2">This is where the news information will go.</p>
                 </a>
             </div>
@@ -208,6 +210,9 @@
     <script src="assets/javascript/jsWeather.js"></script>
     <script src="assets/javascript/NewsAPI.js"></script>
     <script src="here-or-there.js"></script>
+    <script src="NewsAPI.js"></script>
+    <script src="weather.js"></script>
+
 
 </body>
 

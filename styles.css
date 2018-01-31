@@ -1,5 +1,5 @@
  body {
-     background-color: rgb(196, 204, 160);
+     background-color: rgb(240, 248, 240);
  }
  
  #jumbotron {
@@ -25,6 +25,10 @@
      max-height: 400px;
  }
  
+ a {
+     color: red;
+ }
+ 
  @keyframes header {
      from {
          color: rgb(248, 8, 8);
@@ -44,24 +48,28 @@
      font-size: 25px;
  }
  
- #search {
+ #search1 {
      margin: auto;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+ 
+ #search2 {
+     margin: auto;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  }
  
  #weatherCSS1 {
      background-color: rgb(235, 232, 240);
      color: rgb(41, 39, 39);
-     overflow: scroll;
      opacity: 0.6;
      filter: alpha(opacity=60);
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(216, 7, 7, 0.19);
      border-radius: 15px 50px;
  }
  
  #weatherCSS2 {
      background-color: rgb(226, 223, 233);
      color: rgb(41, 39, 39);
-     overflow: scroll;
      opacity: 0.6;
      filter: alpha(opacity=60);
      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -77,7 +85,7 @@
      opacity: 0.6;
      filter: alpha(opacity=60);
      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-     border-radius: 15px 50px;
+     /* border-radius: 15px 50px; */
  }
  
  #cityCSS2 {
